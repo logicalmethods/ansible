@@ -294,7 +294,7 @@ a version that is 3 or higher.
 
 You'll run this command again later though, to make sure everything is working.
 
-Since 2.0, the following custom inventory variables are also supported for additional configuration of WinRM connections
+Since 2.0, the following connection variables are also supported for additional configuration of WinRM connections. Connection variables override config, command line and play/role/task specific options and directives so be sure to set these variables in an appropriate location.
 
 * ``ansible_winrm_scheme``: Specify the connection scheme (``http`` or ``https``) to use for the WinRM connection.  Ansible uses ``https`` by default unless the port is 5985.
 * ``ansible_winrm_path``: Specify an alternate path to the WinRM endpoint.  Ansible uses ``/wsman`` by default.
